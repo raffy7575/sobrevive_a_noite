@@ -1,0 +1,15 @@
+{
+  "name": "sobrevive-a-noite",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sobrevive à Noite: PWA arena survivor com contas, rankings e verificação anti-batota",
+  "scripts": {
+    "test": "node test/run.mjs",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@netlify/blobs": "latest",
+    "@netlify/functions": "latest"
+  }
+}
