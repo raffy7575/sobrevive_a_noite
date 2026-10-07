@@ -2,7 +2,7 @@
    - páginas: rede primeiro (apanha sempre a versão nova), com a cópia local como reserva
    - ficheiros estáticos (fontes, ícones): cache primeiro
    - /api: nunca vai à cache */
-const VERSION = 'sn-v3';
+const VERSION = 'sn-v4';
 const SHELL = [
   '/', '/index.html', '/manifest.webmanifest',
   '/fonts/nunito-latin-600-normal.woff2', '/fonts/nunito-latin-800-normal.woff2', '/fonts/pixelify-sans-latin-600-normal.woff2',

@@ -188,51 +188,75 @@ textarea:focus{outline:none;border-color:var(--lantern)}
 .lu .fx{font-size:15px}
 
 /* Loja */
-.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.tab{background:var(--panel);border:3px solid var(--panel2);padding:10px;font-size:17px;font-weight:800;cursor:pointer;color:var(--muted)}
-.tab.on{background:var(--panel2);border-color:var(--lantern);color:var(--text)}
-.tabpane{display:grid;gap:14px}
-.tabpane.hidden{display:none}
-.inv{display:grid;gap:8px}
-.irow{display:grid;grid-template-columns:48px 1fr;gap:10px;align-items:center;background:var(--panel);border:3px solid var(--panel2);padding:8px 10px 8px 8px}
-.irow img{width:48px;height:48px;image-rendering:pixelated;object-fit:contain}
-.irow .nm{font-size:16px;font-weight:800;line-height:1.15}
-.irow .nm .x{color:var(--lantern);margin-left:4px}
-.irow .nm .rt{font-size:12px;margin-left:6px}
-.irow .fx{font-size:14px;margin-top:3px}
-.invempty{border:3px dashed var(--panel2);padding:14px;text-align:center;color:#8d85b6;font-size:14px}
+.shopsheet{gap:10px}
 .shophead{display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.shophead h2{margin:0}
+.shophead .hr{display:flex;align-items:center;gap:12px}
 .shophead .coin{font-size:24px}
-.offers{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.card{background:var(--panel);padding:10px;display:grid;gap:8px;align-content:start;min-height:160px;border:3px solid var(--panel2);grid-template-rows:auto 1fr auto}
-.card.sold{background:transparent;border:3px dashed var(--panel2)}
-.card .top{display:flex;gap:8px;align-items:center}
-.card .ico{width:48px;height:48px;flex:none;image-rendering:pixelated;object-fit:contain}
-.card .nm{font-size:17px;font-weight:800;line-height:1.1}
-.card .tag{display:block;font-size:12px;font-weight:800;margin-top:2px}
+.wal{display:inline-flex;align-items:center;gap:5px;font-size:15px;font-weight:800;color:var(--lantern);border:2px solid var(--lantern);padding:0 7px;background:rgba(255,178,62,.12);line-height:1.5}
+.wal i{font-style:normal;font-size:11px;opacity:.85}
+.wal.hidden,.hidden.sfull,#perkwrap.hidden{display:none}
+.stats{display:grid;grid-template-columns:repeat(6,1fr) 22px;gap:2px;background:var(--ink);padding:8px 6px;cursor:pointer;user-select:none}
+.sc{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:13px;font-weight:800;min-width:0}
+.sc img{width:22px;height:22px;image-rendering:pixelated;object-fit:contain}
+.sc.car{justify-content:center;color:var(--muted);font-size:14px}
+.sfull{background:var(--ink);padding:10px 12px;display:grid;gap:12px}
+.sfull h4{margin:0 0 5px;font-size:12px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
+.sfull .g{display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;font-size:14px}
+.sfull .r{display:flex;align-items:center;gap:6px;min-width:0}
+.sfull .r img{width:18px;height:18px;image-rendering:pixelated;object-fit:contain;flex:none}
+.sfull .r span:nth-child(2){color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sfull .r .v{margin-left:auto;font-weight:800;color:var(--text);white-space:nowrap}
+.sfull .r .v.up{color:var(--mint)} .sfull .r .v.down{color:var(--coral)}
+.sc .up{color:var(--mint)} .sc .down{color:var(--coral)}
 .fx{display:grid;gap:3px;align-content:start;font-size:14px}
 .ln{display:flex;justify-content:space-between;gap:6px}
 .ln span{color:var(--muted)}
 .ln b{font-weight:800}
 .up{color:var(--mint)} .down{color:var(--coral)} .hot{color:var(--lantern)}
 .was{font-size:13px;color:var(--muted);text-align:right;margin-top:-2px}
-.card .btn{width:100%;padding:8px 10px;font-size:18px;display:flex;align-items:center;justify-content:center;gap:6px}
-.card .btn img{width:18px;height:18px;image-rendering:pixelated}
+.eff{font-size:12px;line-height:1.25;color:var(--moon);margin-top:3px;border-top:1px dashed var(--panel2);padding-top:4px}
+.eff.wide{grid-column:1/-1}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}
+.mc{display:flex;flex-direction:column;line-height:1.15}
+.mc span{font-size:11px;color:var(--muted)}
+.mc b{font-size:15px;font-weight:800}
 .sec{font-size:14px;font-weight:800;color:var(--muted);margin:0 0 6px}
-.wlist{display:grid;gap:6px}
-.wrow{display:grid;grid-template-columns:48px 1fr;gap:10px;align-items:center;background:var(--panel);padding:6px 10px 6px 6px;border:3px solid var(--panel2);min-height:52px}
-.wrow.empty{background:transparent;border-style:dashed;color:#8d85b6;font-size:14px;grid-template-columns:1fr}
-.wrow img{width:48px;height:48px;image-rendering:pixelated;object-fit:contain}
-.wrow .nm{font-size:16px;font-weight:800}
-.wrow .st{font-size:13px;color:var(--muted);line-height:1.3}
-.wrow .st b{color:var(--text);font-weight:800}
-.rowbtns{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:6px;margin-top:6px}
-.rowbtns .btn{padding:7px 10px;font-size:15px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:3px 16px;font-size:14px;background:var(--ink);padding:10px 12px}
-.stats div{display:flex;justify-content:space-between;gap:8px}
-.stats span:first-child{color:var(--muted)}
-.stats span:last-child{font-weight:800}
-.shopbtns{display:grid;grid-template-columns:auto 1fr;gap:10px;position:sticky;bottom:-4px;padding:10px 0 4px;background:linear-gradient(to top,rgba(12,8,32,1) 70%,rgba(12,8,32,0))}
+.offers{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.card{background:var(--panel);padding:8px;display:grid;gap:6px;align-content:start;min-height:150px;border:3px solid var(--panel2);grid-template-rows:auto 1fr auto}
+.card.lk{box-shadow:inset 0 0 0 2px var(--lantern)}
+.card.sold{background:transparent;border:3px dashed var(--panel2)}
+.card .top{display:flex;gap:8px;align-items:center}
+.card .ico{width:40px;height:40px;flex:none;image-rendering:pixelated;object-fit:contain}
+.card .nm{font-size:15px;font-weight:800;line-height:1.1}
+.card .tag{display:block;font-size:11px;font-weight:800;margin-top:2px}
+.card .fx{font-size:13px;gap:2px}
+.card .foot{display:grid;grid-template-columns:38px 1fr;gap:6px}
+.lock{border:0;background:var(--panel2);color:var(--muted);box-shadow:0 3px 0 var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.lock.on{background:var(--lantern);color:var(--ink)}
+.lock svg{width:18px;height:18px}
+.card .btn{width:100%;padding:7px 8px;font-size:17px;display:flex;align-items:center;justify-content:center;gap:5px}
+.card .btn img{width:16px;height:16px;image-rendering:pixelated}
+.card .btn small{font-size:12px;font-weight:800;color:var(--coral)}
+.slots{display:grid;gap:6px}
+.slots.w{grid-template-columns:repeat(4,1fr)} .slots.i{grid-template-columns:repeat(5,1fr)} .slots.p{grid-template-columns:repeat(6,1fr)}
+.slot{position:relative;aspect-ratio:1;background:var(--panel);border:3px solid var(--panel2);padding:0;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.slot img{width:76%;height:76%;image-rendering:pixelated;object-fit:contain}
+.slot.empty{background:transparent;border-style:dashed;cursor:default}
+.slot.sel{outline:3px solid var(--lantern);outline-offset:1px}
+.slot .bd{position:absolute;right:2px;bottom:-1px;font-size:11px;font-weight:800;color:var(--lantern);text-shadow:0 1px 0 var(--ink)}
+#detail:empty{display:none}
+.dt{background:var(--panel);border:3px solid var(--panel2);padding:8px 10px;display:grid;gap:8px;box-shadow:0 -6px 14px rgba(12,8,32,.7)}
+.dt .hd{display:grid;grid-template-columns:44px 1fr 32px;gap:10px;align-items:center}
+.dt .hd img{width:44px;height:44px;image-rendering:pixelated;object-fit:contain}
+.dt .nm{font-size:16px;font-weight:800;line-height:1.15}
+.dt .nm .rt{font-size:12px;margin-left:6px}
+.dt .x{border:0;background:var(--panel2);color:var(--text);width:32px;height:32px;cursor:pointer;font-size:14px;font-weight:800;padding:0}
+.dt .fx{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));column-gap:16px;font-size:13px}
+.dbtns{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:6px}
+.dbtns .btn{padding:7px 10px;font-size:15px}
+.shopfoot{position:sticky;bottom:-4px;display:grid;gap:8px;padding:10px 0 4px;background:linear-gradient(to top,rgba(12,8,32,1) 78%,rgba(12,8,32,0))}
+.shopbtns{display:grid;grid-template-columns:auto 1fr;gap:10px}
 </style>
 </head>
 <body>
@@ -251,6 +275,7 @@ textarea:focus{outline:none;border-color:var(--lantern)}
     <div class="row wave">
       <span>Onda <b id="wv">1</b></span>
       <div class="prog"><div id="progfill"></div></div>
+      <span class="wal hidden" id="walw"><i>×2</i><b id="wal">0</b></span>
       <span><b id="tm">20</b><span id="tms">s</span></span>
     </div>
   </header>
@@ -354,32 +379,26 @@ textarea:focus{outline:none;border-color:var(--lantern)}
   </div>
 
   <div id="shop" class="ov hidden">
-    <div class="sheet">
+    <div class="sheet shopsheet">
       <div class="shophead">
         <h2 id="shopWave">Loja</h2>
-        <div class="coin"><img id="coinico2" alt=""><b id="shopCoins">0</b></div>
-      </div>
-      <div class="tabs">
-        <button class="tab on" data-t="shop">Loja</button>
-        <button class="tab" data-t="inv">Inventário <span id="invN"></span></button>
-      </div>
-      <div id="tabShop" class="tabpane">
-        <div class="offers" id="offers"></div>
-        <div>
-          <p class="sec" id="wcount">Armas</p>
-          <div class="wlist" id="wlist"></div>
+        <div class="hr">
+          <span class="wal hidden" id="shopWalW"><i>×2</i><b id="shopWal"></b></span>
+          <div class="coin"><img id="coinico2" alt=""><b id="shopCoins">0</b></div>
         </div>
       </div>
-      <div id="tabInv" class="tabpane hidden">
-        <p class="sec">Itens comprados</p>
-        <div class="inv" id="invItems"></div>
-        <p class="sec">Melhorias de nível</p>
-        <div class="inv" id="invPerks"></div>
-      </div>
       <div class="stats" id="stats"></div>
-      <div class="shopbtns">
-        <button class="btn alt" id="reroll">Trocar</button>
-        <button class="btn" id="next">Começar onda</button>
+      <div class="sfull hidden" id="statsFull"></div>
+      <div class="offers" id="offers"></div>
+      <div><p class="sec" id="wcount">Armas</p><div class="slots w" id="wslots"></div></div>
+      <div><p class="sec" id="icount">Itens</p><div class="slots i" id="islots"></div></div>
+      <div id="perkwrap"><p class="sec" id="pcount">Melhorias de nível</p><div class="slots p" id="pslots"></div></div>
+      <div class="shopfoot">
+        <div id="detail"></div>
+        <div class="shopbtns">
+          <button class="btn alt" id="reroll">Trocar</button>
+          <button class="btn" id="next">Começar onda</button>
+        </div>
       </div>
     </div>
   </div>
@@ -563,7 +582,7 @@ const inC = (x, y, cx, cy, r) => (x - cx) ** 2 + (y - cy) ** 2 <= r * r;
 const RMP = {
   steel:['#eef3ff','#b4bfdc','#7c88ab','#4a5273'], gold:['#fff3b8','#f6c955','#d3922e','#8f5a1f'], wood:['#d9a46c','#b27646','#80502d','#533018'],
   red:['#ff9fa3','#ec4a5c','#b8283f','#781530'], bone:['#fffdf0','#ece3c8','#c9bd9a','#8f8466'], ice:['#e6fbff','#9fe3f2','#5cb4d4','#2f6f94'],
-  purple:['#e3c4ff','#b07cff','#7a45c4','#472580'], fire:['#fff3b8','#ffb23e','#e8501f','#9a2a14'], rust:['#e8a46a','#c4703a','#8f4a22','#5a2c14'], dark:['#8a8aa8','#5a5a78','#3a3a52','#222236']
+  purple:['#e3c4ff','#b07cff','#7a45c4','#472580'], fire:['#fff3b8','#ffb23e','#e8501f','#9a2a14'], rust:['#e8a46a','#c4703a','#8f4a22','#5a2c14'], green:['#c4f0a0','#6aa84f','#3f7a35','#1e4a22'], dark:['#8a8aa8','#5a5a78','#3a3a52','#222236']
 };
 const lt = (x, y, x0, y0, sz) => Math.max(0, Math.min(3, Math.floor(((x - x0) * .6 + (y - y0) * .8) / sz * 4)));
 const RC4 = (r, x, y, x0, y0, sz) => RMP[r][lt(x, y, x0, y0, sz)];
@@ -592,6 +611,23 @@ const XI = {
   x_chalice: (x, y) => { if (y >= 2 && y <= 7) { const hw = 5 - (y - 2) * .35; if (Math.abs(x - 7.5) > hw) return null; if (y <= 3) return RC4('red', x, y, 3, 1, 8); return RC4('gold', x, y, 3, 2, 10); } if (y >= 8 && y <= 11 && x >= 7 && x <= 8) return RC4('gold', x, y, 6, 7, 5); if (y >= 12 && y <= 13 && x >= 5 && x <= 10) return RC4('gold', x, y, 4, 11, 7); return null; },
   x_glove: (x, y) => { const fing = [[4, 5, 3], [6, 7, 2], [8, 9, 2], [10, 11, 4]]; for (const [a, b, top] of fing) if (x >= a && x <= b && y >= top && y <= 7) return (x === a && y > 4) ? RMP.wood[1] : RC4('wood', x, y, 3, 2, 10); if (x >= 4 && x <= 11 && y >= 8 && y <= 11) return RC4('wood', x, y, 3, 6, 9); if (x >= 1 && x <= 3 && y >= 8 && y <= 10) return RMP.wood[1]; if (x >= 4 && x <= 11 && y >= 12 && y <= 13) return RMP.steel[2]; return null; },
   x_compass: (x, y) => { const d = Math.hypot(x - 8, y - 8); if (d > 6.6) return null; if (d > 5.4) return RC4('gold', x, y, 2, 2, 12); if (Math.abs(x + y - 16) <= .6 && x >= 5 && x <= 11) return x > 8 ? RMP.red[1] : RMP.bone[0]; if ((x === 8 && (y === 3 || y === 13)) || (y === 8 && (x === 3 || x === 13))) return RMP.gold[1]; return RMP.ice[3]; },
+  x_whet: (x, y) => { if (x >= 2 && x <= 13 && y >= 10 && y <= 13) { if (y === 10) return RMP.steel[1]; return RC4('dark', x, y, 2, 10, 10); } const by = 9 - (x - 3) * .6; if (x >= 3 && x <= 13 && Math.abs(y - by) <= 1.1 && y <= 9) return Math.abs(y - by) < .5 ? RMP.steel[0] : RMP.steel[2]; if ((x === 12 && y === 4) || (x === 13 && y === 3) || (x === 14 && y === 4)) return RMP.fire[0]; return null; },
+  x_gaunt: (x, y) => { if (y >= 13 && y <= 14 && x >= 3 && x <= 12) return RMP.steel[3]; if (x >= 4 && x <= 11 && y >= 7 && y <= 12) return RC4('steel', x, y, 4, 6, 9); if (x >= 2 && x <= 3 && y >= 8 && y <= 10) return RMP.steel[2]; const f = [[4, 5], [6, 7], [8, 9], [10, 11]]; for (const [a, b] of f) if (x >= a && x <= b && y >= 3 && y <= 6) return (y === 6 || x === a && y > 3) ? RMP.steel[2] : RC4('steel', x, y, 3, 3, 8); return null; },
+  x_quiver: (x, y) => { if (x >= 5 && x <= 10 && y >= 6 && y <= 14) return (x === 5 || y === 6) ? RMP.wood[1] : RC4('wood', x, y, 5, 6, 10); if (y >= 2 && y <= 5 && (x === 6 || x === 8 || x === 10)) return y <= 3 ? RMP.red[1] : RMP.bone[1]; if (y === 1 && (x === 6 || x === 8 || x === 10)) return RMP.red[2]; return null; },
+  x_ember: (x, y) => { const d = Math.hypot(x - 8, y - 10); if (d <= 4.6) { if ((x + y) % 4 === 0 || (x === 8 && y >= 9)) return RMP.fire[1]; return RC4('dark', x, y, 4, 6, 9); } const f = ((x - 8) / 2.4) ** 2 + ((y - 5) / 3.6) ** 2; if (f <= 1 && y <= 7) return y < 5 ? RMP.fire[0] : RMP.fire[1]; return null; },
+  x_sickle: (x, y) => { if (x >= 11 && x <= 12 && y >= 8 && y <= 14) return RC4('wood', x, y, 11, 8, 6); const d = Math.hypot(x - 9, y - 9); if (y <= 9 && x <= 12 && d >= 3.5 && d <= 5.8) return RC4('steel', x, y, 3, 3, 9); return null; },
+  x_leaky: (x, y) => { if (y >= 2 && y <= 4 && x >= 6 && x <= 9) return RMP.red[1]; const e = ((x - 8) / 5.2) ** 2 + ((y - 9) / 4.6) ** 2; if (y >= 4 && e <= 1) { if (x >= 10 && x <= 11 && y >= 10 && y <= 11) return '#10091a'; return RC4('wood', x, y, 3, 4, 10); } if (x >= 11 && x <= 12 && y >= 12 && y <= 13) return RMP.gold[1]; return null; },
+  x_syringe: (x, y) => { if (Math.abs(x + y - 16) <= 1.2 && x >= 5 && x <= 11) return x <= 8 ? RMP.red[1] : RMP.ice[0]; if ((x === 11 && y === 3) || (x === 12 && y === 4) || (x === 13 && y === 5)) return RMP.steel[1]; if ((x === 4 && y === 12) || (x === 3 && y === 13) || (x === 2 && y === 14)) return RMP.steel[0]; if ((x === 12 && y === 5) || (x === 11 && y === 4)) return RMP.steel[2]; return null; },
+  x_aegis: (x, y) => { const e = Math.abs(x - 7.5) / 5 + Math.abs(y - 8) / 6.6; if (e > 1) return null; if (e > .86) return RMP.ice[3]; if (x === 8 || x === 7) return RMP.ice[0]; return y < 6 ? RMP.ice[1] : x < 8 ? RMP.ice[1] : RMP.ice[2]; },
+  x_halo: (x, y) => { const o = ((x - 8) / 7) ** 2 + ((y - 8) / 4.4) ** 2, i = ((x - 8) / 4.6) ** 2 + ((y - 8) / 2.2) ** 2; if (o > 1 || i < 1) return null; if (x >= 12 && y >= 8 && y <= 9) return null; if ((x === 5 && y === 11) || (x === 6 && y === 11)) return RMP.gold[3]; return RC4('gold', x, y, 1, 4, 11); },
+  x_mask: (x, y) => { const e = ((x - 8) / 5.2) ** 2 + ((y - 8) / 6.6) ** 2; if (e > 1) return null; if ((x === 5 || x === 6) && y >= 6 && y <= 7 || (x === 10 || x === 11) && y >= 6 && y <= 7) return '#10091a'; if (x === 8 && y >= 8 && y <= 10) return RMP.red[3]; if (y === 12 && x >= 6 && x <= 10) return RMP.bone[0]; if (y === 3 && x >= 6 && x <= 10) return RMP.gold[1]; return RC4('red', x, y, 3, 2, 12); },
+  x_frost: (x, y) => { const c = Math.abs(x - 8) / 3.2 + Math.abs(y - 7) / 6.2, l = Math.abs(x - 4.5) / 2.2 + Math.abs(y - 10.5) / 3.4, r = Math.abs(x - 11.5) / 2.2 + Math.abs(y - 10) / 3.2; if (c <= 1) return x < 8 ? RMP.ice[0] : RMP.ice[1]; if (l <= 1) return RMP.ice[1]; if (r <= 1) return RMP.ice[2]; return null; },
+  x_bomb: (x, y) => { const d = Math.hypot(x - 7.5, y - 10); if (d <= 5) return RC4('dark', x, y, 3, 6, 9); if (y === 5 && x >= 6 && x <= 9) return RMP.steel[1]; if ((x === 9 && y === 4) || (x === 10 && y === 3) || (x === 11 && y === 2)) return RMP.wood[1]; if ((x === 12 && y === 1) || (x === 11 && y === 1) || (x === 12 && y === 2) || (x === 13 && y === 1)) return RMP.fire[x === 12 && y === 1 ? 0 : 1]; return null; },
+  x_scales: (x, y) => { if (y === 3 && x >= 2 && x <= 13) return RMP.gold[1]; if (x >= 7 && x <= 8 && y >= 2 && y <= 12) return RC4('gold', x, y, 6, 2, 8); if (y === 13 && x >= 5 && x <= 10) return RMP.gold[2]; if ((x === 3 || x === 5) && y >= 4 && y <= 6) return RMP.gold[3]; if ((x === 10 || x === 12) && y >= 4 && y <= 6) return RMP.gold[3]; if ((y === 7 || y === 8) && ((x >= 2 && x <= 6 && y === 7) || (x >= 3 && x <= 5 && y === 8) || (x >= 9 && x <= 13 && y === 7) || (x >= 10 && x <= 12 && y === 8))) return RC4('gold', x, y, 2, 7, 4); return null; },
+  x_thorns: (x, y) => { const dx = x - 7.5, dy = y - 8.5, d = Math.hypot(dx, dy); if (d >= 3.2 && d <= 5) return (x + y) % 2 ? RMP.green[1] : RMP.green[2]; if (d > 5 && d <= 7.4) { const a = Math.atan2(dy, dx); return Math.cos(7 * a) > 1 - (7.6 - d) * .45 ? RMP.bone[1] : null; } return null; },
+  x_crit: (x, y) => { const dx = Math.abs(x - 7.5), dy = Math.abs(y - 7.5), d = Math.hypot(dx, dy); if ((Math.min(dx, dy) <= .6 && Math.max(dx, dy) <= 7) || (Math.abs(dx - dy) < .6 && d <= 4.6)) return d < 2.3 ? RMP.fire[0] : d < 4.6 ? RMP.fire[1] : RMP.fire[2]; return null; },
+  x_flame: (x, y) => { const tip = y >= 1 && y <= 8 && Math.abs(x - 8) <= (y - 1) * .55 + .4, bot = Math.hypot(x - 8, y - 10) <= 4.2; if (!tip && !bot) return null; const inner = Math.hypot(x - 8, y - 11) <= 2.4 || (y >= 6 && y <= 9 && Math.abs(x - 8) <= (y - 5) * .35); return inner ? RMP.fire[0] : y < 6 ? RMP.fire[1] : y < 10 ? RMP.fire[2] : RMP.fire[3]; },
+  x_wheat: (x, y) => { if (x === 8 && y >= 6 && y <= 14) return RMP.green[1]; for (const gy of [2, 4, 6]) { if (y >= gy && y <= gy + 1 && ((x === 7 && y === gy + 1) || (x === 9 && y === gy) || (x === 6 && y === gy) || (x === 10 && y === gy + 1))) return RMP.gold[y === gy ? 0 : 1]; } if (x === 8 && y >= 1 && y <= 5) return RMP.gold[1]; return null; },
 };
 for (const k in XI) { ICONS[k] = proc(16, 16, XI[k]); ICON[k] = dataURL(ICONS[k]); }
 const OBST_SPR = {
@@ -772,7 +808,7 @@ const WEAPONS = {
   cajado:    {name:'Cajado',    icon:'cajado',    cd:.8,  dmg:6,   spd:125, range:105, n:1, spread:0,   pierce:1, price:26, r:3,   col:'#c77dff', home:true},
   espada:    {name:'Espada',    icon:'espada',    cd:.62, dmg:8,   spd:260, range:34,  n:1, spread:0,   pierce:4, price:24, r:6.5, col:'#e9f1ff', melee:true},
   machado:   {name:'Machado',   icon:'machado',   cd:.95, dmg:15,  spd:240, range:30,  n:1, spread:0,   pierce:6, price:30, r:7.5, col:'#c3cae0', melee:true},
-  tocha:     {name:'Tocha',     icon:'tocha',     cd:.11, dmg:1.9, spd:130, range:36,  n:1, spread:0,   pierce:2, price:28, r:4,   col:'#ffb23e', flame:true, jitter:.45},
+  tocha:     {name:'Tocha',     icon:'tocha',     cd:.11, dmg:1.9, spd:130, range:36,  n:1, spread:0,   pierce:2, price:28, r:4,   col:'#ffb23e', flame:true, jitter:.45, burn:1.2},
 };
 const ET = {
   blob:     {hp:8,    spd:31, dmg:1, r:6,   coin:1, cp:1, col:'#5ee3b0'},
@@ -807,14 +843,21 @@ const STAT = {
   armor:    ['Armadura',      v => Math.round(v),               d => sgn(d, Math.round(d))],
   lifesteal:['Roubo de vida', v => Math.round(v * 100) + '%',   d => sgn(d, Math.round(d * 100) + '%')],
   luck:     ['Sorte',         v => Math.round(v),               d => sgn(d, Math.round(d))],
+  crit:     ['Crítico',       v => Math.round(v * 100) + '%',   d => sgn(d, Math.round(d * 100) + '%')],
+  melee:    ['Corpo a corpo', v => sgn(v, Math.round(v * 100) + '%'), d => sgn(d, Math.round(d * 100) + '%')],
+  ranged:   ['À distância',   v => sgn(v, Math.round(v * 100) + '%'), d => sgn(d, Math.round(d * 100) + '%')],
+  elem:     ['Elemental',     v => Math.round(v),               d => sgn(d, Math.round(d))],
+  harvest:  ['Colheita',      v => Math.round(v),               d => sgn(d, Math.round(d))],
 };
-const INTS = new Set(['maxHp', 'speed', 'magnet', 'armor', 'luck']);
+const INTS = new Set(['maxHp', 'speed', 'magnet', 'armor', 'luck', 'elem', 'harvest']);
 function clampStat(k, v){
   if (k === 'speed') return clamp(v, 42, 196);
   if (k === 'dodge') return clamp(v, 0, .5);
   if (k === 'lifesteal') return clamp(v, 0, .5);
   if (k === 'maxHp') return Math.max(3, v);
-  if (k === 'armor' || k === 'luck') return Math.max(0, v);
+  if (k === 'armor' || k === 'luck' || k === 'elem' || k === 'harvest') return Math.max(0, v);
+  if (k === 'crit') return clamp(v, 0, .75);
+  if (k === 'melee' || k === 'ranged') return Math.max(-.5, v);
   if (k === 'dmg' || k === 'rate' || k === 'range') return Math.max(.3, v);
   return v;
 }
@@ -855,6 +898,20 @@ const ITEMS = [   // loja: cada item tem um bónus e um custo
   {id:'chalice', name:'Cálice',            icon:'x_chalice',    price:16, fx:[['maxHp', 4], ['dmg', -.05]]},
   {id:'glove',   name:'Luvas de Couro',    icon:'x_glove',      price:14, fx:[['speed', 10], ['range', -.1]]},
   {id:'compass', name:'Bússola Torta',     icon:'x_compass',    price:14, fx:[['dodge', .06], ['speed', -6]]},
+  {id:'whet',    name:'Pedra de Amolar',   icon:'x_whet',    price:16, fx:[['crit', .10], ['rate', -.05]]},
+  {id:'gaunt',   name:'Manopla de Aço',    icon:'x_gaunt',   price:16, fx:[['melee', .25], ['speed', -6]]},
+  {id:'quiver',  name:'Carcaz de Couro',   icon:'x_quiver',  price:16, fx:[['ranged', .25], ['speed', -5]]},
+  {id:'ember',   name:'Brasa Eterna',      icon:'x_ember',   price:18, fx:[['elem', 4], ['maxHp', -2]]},
+  {id:'sickle',  name:'Foice Enferrujada', icon:'x_sickle',  price:16, fx:[['harvest', 4], ['dmg', -.05]]},
+  {id:'leaky',   name:'Bolsa Furada',      icon:'x_leaky',   price:16, eff:'coinKill', tag:'Economia', fx:[['speed', -5]]},
+  {id:'adren',   name:'Seringa de Adrenalina', icon:'x_syringe', price:18, eff:'adren', tag:'Defesa', fx:[['maxHp', -2]]},
+  {id:'ward',    name:'Cristal de Vigília', icon:'x_aegis',  price:20, eff:'ward', tag:'Defesa', fx:[['speed', -5]]},
+  {id:'halo',    name:'Auréola Rachada',   icon:'x_halo',    price:26, eff:'revive', tag:'Defesa', fx:[['maxHp', -3]]},
+  {id:'mask',    name:'Máscara Rubra',     icon:'x_mask',    price:18, eff:'rage', tag:'Ofensivo', fx:[['maxHp', -2]]},
+  {id:'frost',   name:'Cristal de Gelo',   icon:'x_frost',   price:18, eff:'fresh', tag:'Ofensivo', fx:[['speed', -6]]},
+  {id:'bomb',    name:'Bomba Instável',    icon:'x_bomb',    price:20, eff:'boom', tag:'Ofensivo', fx:[['range', -.1]]},
+  {id:'scales',  name:'Balança Viciada',   icon:'x_scales',  price:18, eff:'haggle', tag:'Economia', fx:[['dmg', -.05]]},
+  {id:'thorncr', name:'Coroa de Espinhos', icon:'x_thorns',  price:18, eff:'thorns', tag:'Defesa', fx:[['speed', -5]]},
 ];
 /* Melhorias ao subir de nível (3 à escolha) */
 const SKILLS = [
@@ -951,11 +1008,15 @@ if (!unlockedU(CHARS[selChar].unlock)) selChar = 0;
 if (!unlockedU(ARENAS[selArena].unlock)) selArena = 0;
 
 function newWeapon(type, tier = 0){ return {type, tier, cd:.3, aim:0, kick:0}; }
-function newGame(ch, arena){
-  const st = {maxHp:ch.hp, speed:ch.speed, dmg:1, rate:1, range:1, regen:0, magnet:24, dodge:0, coinMul:1, armor:0, lifesteal:0, luck:0};
+function baseStats(ch, arena){
+  const st = {maxHp:ch.hp, speed:ch.speed, dmg:1, rate:1, range:1, regen:0, magnet:24, dodge:0, coinMul:1, armor:0, lifesteal:0, luck:0, crit:0, melee:0, ranged:0, elem:0, harvest:0};
   ch.mods.forEach(([k, d]) => { st[k] = clampStat(k, st[k] + d); });
   if (arena.fx.luck) st.luck += arena.fx.luck;
-  S = {
+  return st;
+}
+function newGame(ch, arena){
+  const st = baseStats(ch, arena);
+  S = {wallet:0, ward:0, boostT:0, boostV:0, revived:false, locked:[], sel:null, statsOpen:false,
     mode:'play', paused:false, t:0, wave:1, ch, arena, obst:arena.obstacles.map(o => ({...o})), unl0:unlockedIds(), shake:0, hurtT:0, banner:null, toast:null,
     p:{x:W / 2, y:H / 2, hp:st.maxHp, i:0, face:1, moving:false},
     st, base:{...st}, weapons:[newWeapon(ch.weapon)], enemies:[], bullets:[], eshots:[], spawnedNow:[], bought:0, coins:[], parts:[], spawns:[],
@@ -966,7 +1027,7 @@ function newGame(ch, arena){
 const coinWaveMul = () => S.wave >= 3 ? 2 : 1;
 const waveDur = n => Math.min(20 + (n - 1) * 2, 40);
 function startWave(){
-  S.mode = 'play';
+  S.mode = 'play'; S.ward = Math.round(effV('ward'));
   S.waveT = waveDur(S.wave); S.waveLeft = S.waveT; S.spawnT = 1.2;
   S.enemies = []; S.bullets = []; S.eshots = []; S.spawns = [];
   const boss = isBossWave(S.wave);
@@ -978,6 +1039,22 @@ const isBossWave = n => n % 6 === 0;
 const BOSSES = ['rei', 'ceifeiro', 'colosso', 'rei2', 'vampiro'];
 const bossType = n => BOSSES[(n / 6 - 1) % 5];
 const hpMul = n => n <= 1 ? .7 : 1 + .22 * (n - 2) + .018 * (n - 2) ** 2;      // vida dos monstros por onda
+const EFFS = {
+  coinKill:{base:.12, cap:.6, txt:v => `Ao matar, ${Math.round(v * 100)}% de largar uma moeda extra`},
+  adren:   {base:.4,  cap:1.2, txt:v => `Ao ser atingido, +${Math.round(v * 100)}% de velocidade durante 1,5 s`},
+  ward:    {base:1,   cap:3, int:true, txt:v => `No início de cada onda, um escudo bloqueia ${v > 1 ? v + ' golpes' : 'o primeiro golpe'}`},
+  revive:  {base:.4,  cap:1, txt:v => `Uma vez por partida, sobrevives a um golpe mortal com ${Math.round(v * 100)}% de vida`},
+  rage:    {base:.25, cap:.6, txt:v => `+${Math.round(v * 100)}% de dano com metade da vida ou menos`},
+  fresh:   {base:.2,  cap:.5, txt:v => `+${Math.round(v * 100)}% de dano com a vida cheia`},
+  boom:    {base:4,   int:true, txt:v => `Os monstros explodem ao morrer (${v} de dano em redor)`},
+  haggle:  {base:.1,  cap:.4, txt:v => `Preços na loja −${Math.round(v * 100)}%`},
+  thorns:  {base:3,   int:true, txt:v => `Quando és atingido, os monstros à volta levam ${v} de dano`},
+};
+const effV = id => { let t = 0; for (const e of S.inv) if (e.eff && e.eff.id === id) t += e.eff.v; return t; };
+function scaleEff(id, tier){
+  const d = EFFS[id]; let v = d.base * IM[tier]; if (d.cap) v = Math.min(d.cap, v);
+  return d.int ? Math.round(v) : Math.round(v * 100) / 100;
+}
 const dmgMul = n => 1 + Math.floor(n / 6);                                       // dano dos monstros por onda
 const spMulW = n => Math.min(1, .65 + .12 * n) * Math.min(1.5, 1 + .012 * Math.max(0, n - 3));
 function pickType(n){
@@ -1093,13 +1170,20 @@ function hurt(d){
   if (p.i > 0) return;
   p.i = S.wave < 3 ? .9 : .7;
   if (Math.random() < st.dodge) { burst(p.x, p.y - 6, '#fff6d6', 5, 35); return; }
+  if (S.ward > 0) { S.ward--; burst(p.x, p.y - 4, '#8fd4ff', 12, 80); sfx.block(); return; }
+  const th = effV('thorns'); if (th > 0) { for (const e of S.enemies) if (e.hp > 0 && Math.hypot(e.x - p.x, e.y - p.y) < 22) { e.hp -= th * st.dmg; e.flash = .09; } burst(p.x, p.y, '#c04fa0', 8, 70); }
   // armadura: reduz o dano médio recebido (mantém a vida em números inteiros)
   const eff = d * (1 - st.armor / (st.armor + 12)), base = Math.floor(eff);
   const take = base + (Math.random() < eff - base ? 1 : 0);
   if (take <= 0) { burst(p.x, p.y - 4, '#8d97b5', 7, 40); sfx.block(); return; }
   p.hp -= take; S.shake = 3; S.hurtT = .12; sfx.hurt();
   burst(p.x, p.y, '#ff6b7f', 10, 70);
-  if (p.hp <= 0) gameOver();
+  const ad = effV('adren'); if (ad > 0) { S.boostT = 1.5; S.boostV = ad; }
+  if (p.hp <= 0) {
+    const rv = effV('revive');
+    if (rv > 0 && !S.revived) { S.revived = true; p.hp = Math.max(1, Math.round(st.maxHp * Math.min(1, rv))); p.i = 2; S.shake = 6; burst(p.x, p.y, '#ffd23e', 30, 140); S.toast = {title:'Auréola', sub:'Sobreviveste', t:1.8}; return; }
+    gameOver();
+  }
 }
 function kill(e){
   const d = ET[e.type], A = S.arena.fx;
@@ -1111,12 +1195,21 @@ function kill(e){
     for (let i = 0; i < nC; i++) { const a = i * .45, r = 6 + (i % 3) * 5; S.coins.push({x:clamp(e.x + Math.cos(a) * r, B + 6, W - B - 6), y:clamp(e.y + Math.sin(a) * r, B + 6, H - B - 6), v:Math.max(1, Math.round(2 * cv0)), big, ph:Math.random() * 6}); }
     S.shake = 6; burst(e.x, e.y, d.col, 40, 130);
   } else if (Math.random() < d.cp) S.coins.push({x:e.x, y:e.y, v:Math.max(1, Math.round(d.coin * cv0)), big, ph:Math.random() * 6});
+  if (!e.boss) {
+    const ck = effV('coinKill'); if (ck > 0 && Math.random() < ck) S.coins.push({x:e.x + rnd(-5, 5), y:e.y + rnd(-5, 5), v:Math.max(1, Math.round(cv0)), big, ph:Math.random() * 6});
+    const bm = effV('boom');
+    if (bm > 0) { for (const o of S.enemies) if (o !== e && o.hp > 0 && Math.hypot(o.x - e.x, o.y - e.y) < 26) { o.hp -= bm * S.st.dmg; o.flash = .09; } burst(e.x, e.y, '#ff9a3a', 12, 110); }
+  }
   if (e.type === 'gosma') for (const sx of [-6, 6]) S.spawnedNow.push(newEnemy('blob', e.x + sx, e.y, .8));
   burst(e.x, e.y, d.col, 9, 75); sfx.kill();
   while (S.kills >= cum(S.level)) { S.level++; S.pending++; }
 }
 function hitEnemy(e, b){
-  e.hp -= b.dmg; e.flash = .09;
+  const st0 = S.st, crit = st0.crit > 0 && Math.random() < st0.crit;
+  e.hp -= crit ? b.dmg * 2 : b.dmg; e.flash = .09;
+  if (crit) burst(b.x, b.y, '#ffd23e', 7, 95);
+  const bd = (b.burn || 0) + st0.elem * .6;
+  if (bd > 0) e.burn = {t:3, dps:Math.max(bd, e.burn ? e.burn.dps : 0)};
   const m = Math.hypot(b.vx, b.vy) || 1, kb = e.type === 'brute' ? 20 : 66;
   e.kx += b.vx / m * kb; e.ky += b.vy / m * kb;
   burst(b.x, b.y, '#fff6d6', 2, 40); sfx.hit();
@@ -1134,13 +1227,20 @@ function applyFx(fx){
 
 /* armas equipadas: posição da mão, ponta do cano e disparo */
 function handPos(idx){ const [hx, hy] = SLOTS[idx], p = S.p; return [p.x + hx, p.y + hy]; }
+const isMeleeDef = d => !!(d.melee || d.flame);
+function dynDmg(){
+  const p = S.p, st = S.st; let m = 1;
+  if (p.hp <= st.maxHp * .5) m += effV('rage');
+  if (p.hp >= st.maxHp - .01) m += effV('fresh');
+  return m;
+}
 function fire(w, idx){
   const def = WEAPONS[w.type], st = S.st, spr = HELD[w.type], T = TW[w.tier];
   const [ax, ay] = handPos(idx), L = spr.width - 2;
   const ox = ax + Math.cos(w.aim) * L, oy = ay + Math.sin(w.aim) * L;
   for (let i = 0; i < def.n; i++) {
     const off = def.n > 1 ? (i - (def.n - 1) / 2) * def.spread : 0, aa = w.aim + off + rnd(-.03, .03) + (def.jitter ? rnd(-def.jitter, def.jitter) : 0);
-    S.bullets.push({x:ox, y:oy, vx:Math.cos(aa) * def.spd, vy:Math.sin(aa) * def.spd, dmg:def.dmg * T.dmg * st.dmg, life:def.range * T.range * st.range / def.spd + .04,
+    S.bullets.push({x:ox, y:oy, vx:Math.cos(aa) * def.spd, vy:Math.sin(aa) * def.spd, dmg:def.dmg * T.dmg * st.dmg * (1 + (isMeleeDef(def) ? st.melee : st.ranged)) * dynDmg(), burn:def.burn || 0, life:def.range * T.range * st.range / def.spd + .04,
                     pierce:def.pierce, hit:[], r:def.r, melee:!!def.melee, col:def.col, home:!!def.home, flame:!!def.flame, bolt:!!def.bolt});
   }
   w.kick = def.flame ? 1.2 : 3; sfx.shoot();
@@ -1175,8 +1275,10 @@ function update(dt){
     let ix = clamp(inp.jx + inp.kx, -1, 1), iy = clamp(inp.jy + inp.ky, -1, 1);
     const m = Math.hypot(ix, iy); if (m > 1) { ix /= m; iy /= m; }
     p.moving = m > .1;
-    p.x = clamp(p.x + ix * st.speed * dt, B + 7, W - B - 7);
-    p.y = clamp(p.y + iy * st.speed * dt, B + 8, H - B - 7);
+    s.boostT = Math.max(0, s.boostT - dt);
+    const spd = st.speed * (s.boostT > 0 ? 1 + s.boostV : 1);
+    p.x = clamp(p.x + ix * spd * dt, B + 7, W - B - 7);
+    p.y = clamp(p.y + iy * spd * dt, B + 8, H - B - 7);
     collide(p, 4);
     if (ix > .1) p.face = 1; else if (ix < -.1) p.face = -1;
     p.i = Math.max(0, p.i - dt);
@@ -1226,6 +1328,11 @@ function update(dt){
       if (dead) s.bullets.splice(i, 1);
     }
 
+    for (const e of s.enemies) if (e.burn) {
+      e.burn.t -= dt; e.hp -= e.burn.dps * dt;
+      if (Math.random() < dt * 9) burst(e.x + rnd(-3, 3), e.y - 3, Math.random() < .5 ? '#ff7a3a' : '#ffd23e', 1, 25);
+      if (e.burn.t <= 0) e.burn = null;
+    }
     for (const e of s.enemies) if (e.hp > 0) enemyAI(e, dt);
     for (let i = s.eshots.length - 1; i >= 0; i--) {
       const b = s.eshots[i];
@@ -1245,11 +1352,18 @@ function update(dt){
 
   for (let i = s.coins.length - 1; i >= 0; i--) {
     const c = s.coins[i], dx = p.x - c.x, dy = p.y - c.y, d = Math.hypot(dx, dy) || 1;
-    if (s.mode === 'clear' || d < st.magnet) { const sp = s.mode === 'clear' ? 240 + 900 * (1 - clamp(s.clearT, 0, 1)) : 180; c.x += dx / d * sp * dt; c.y += dy / d * sp * dt; }
+    if (d < st.magnet) { c.x += dx / d * 180 * dt; c.y += dy / d * 180 * dt; }
+    else if (s.mode === 'clear') {         // o que ficou no chão sobe para a carteira
+      const tx = W - 30, ty = 2, ex = tx - c.x, ey = ty - c.y, ed = Math.hypot(ex, ey) || 1, sp = 160 + 700 * (1 - clamp(s.clearT, 0, 1));
+      c.x += ex / ed * sp * dt; c.y += ey / ed * sp * dt;
+      if (ed < 8) { s.wallet += c.v; s.coins.splice(i, 1); continue; }
+    }
     if (d < 7) {
-      s.coinsHeld += c.v; s.coins.splice(i, 1); sfx.coin();
-      if (s.coinFloat && s.coinFloat.t > 0) { s.coinFloat.v += c.v; s.coinFloat.t = .9; }
-      else s.coinFloat = {v:c.v, t:.9};
+      const dbl = Math.min(c.v, s.wallet), gain = c.v + dbl; s.wallet -= dbl;
+      s.coinsHeld += gain; s.coins.splice(i, 1); sfx.coin();
+      if (dbl > 0) burst(c.x, c.y, '#fff6d6', 4, 45);
+      if (s.coinFloat && s.coinFloat.t > 0) { s.coinFloat.v += gain; s.coinFloat.t = .9; }
+      else s.coinFloat = {v:gain, t:.9};
     }
   }
   for (let i = s.parts.length - 1; i >= 0; i--) { const q = s.parts[i]; q.x += q.vx * dt; q.y += q.vy * dt; q.vx *= .94; q.vy *= .94; q.life -= dt; if (q.life <= 0) s.parts.splice(i, 1); }
@@ -1266,8 +1380,9 @@ function endWave(){
 function afterWave(){
   const st = S.st, p = S.p;
   // recolhe as moedas que ficaram no chão
-  for (const c of S.coins) S.coinsHeld += c.v;
+  for (const c of S.coins) S.wallet += c.v;
   S.coins = [];
+  if (st.harvest > 0) S.coinsHeld += Math.round(st.harvest * (1 + .08 * (S.wave - 1)));
   p.hp = Math.min(st.maxHp, p.hp + Math.max(1, Math.round(st.maxHp * .12)));
   saveBest(S.wave); postCheckpoint(); syncNow();
   if (S.pending > 0) openLevelUp(); else proceedShop();
@@ -1498,6 +1613,7 @@ function updateHUD(){
   const lo = S.level > 1 ? cum(S.level - 1) : 0, hi = cum(S.level);
   setW('xpfill', clamp((S.kills - lo) / (hi - lo) * 100, 0, 100).toFixed(0) + '%');
   setT('cn', String(S.coinsHeld)); setT('wv', String(S.wave));
+  { const w = S.wallet > 0; if (hudc.walh !== w) { hudc.walh = w; $('#walw').classList.toggle('hidden', !w); } if (w) setT('wal', String(Math.round(S.wallet))); }
   const hold = S.waveLeft <= 0 && S.enemies.some(e => e.boss);
   setT('tm', hold ? 'CHEFE' : String(Math.max(0, Math.ceil(S.waveLeft || 0)))); setT('tms', hold ? '' : 's');
   setW('progfill', S.waveT ? ((1 - S.waveLeft / S.waveT) * 100).toFixed(0) + '%' : '0%');
@@ -1505,6 +1621,7 @@ function updateHUD(){
 
 /* ---------- Loja ---------- */
 const priceMul = () => (1 + .07 * (S.wave - 1) + .014 * (S.wave - 1) ** 2) * (1 + .04 * S.bought);
+const haggleMul = () => 1 - Math.min(.4, effV('haggle'));
 function rollTier(){
   const wv = S.wave, lk = S.st.luck;
   const w = [100, 22 + 2 * wv + lk, Math.max(0, -6 + 1.1 * wv + .5 * lk), Math.max(0, -16 + .8 * wv + .25 * lk)];
@@ -1519,11 +1636,26 @@ function scaleFx(fx, tier){
     return [k, INTS.has(k) ? Math.round(v) : Math.round(v * 100) / 100];
   });
 }
+function offerPrice(o){
+  const wm = o.kind === 'weapon' ? 1 + .12 * Math.max(0, S.weapons.length - 1) : 1;
+  return Math.max(1, Math.round(o.pb * priceMul() * wm * haggleMul()));
+}
 function weaponOffer(tier){
   const k = pick(Object.keys(WEAPONS)), d = WEAPONS[k];
-  return {kind:'weapon', key:k, tier, name:d.name, icon:d.icon, price:Math.max(1, Math.round(d.price * PW[tier] * priceMul() * (1 + .12 * Math.max(0, S.weapons.length - 1))))};
+  const o = {kind:'weapon', key:k, tier, name:d.name, icon:d.icon, pb:d.price * PW[tier]}; o.price = offerPrice(o); return o;
 }
-const INV_MAX = 10, RECENT_N = 14;
+function itemOffer(it, tier){
+  const o = {kind:'item', it, tier, fx:scaleFx(it.fx, tier), name:it.name, icon:it.icon, pb:it.price * PM[tier]};
+  if (it.eff) o.eff = {id:it.eff, v:scaleEff(it.eff, tier)};
+  o.price = offerPrice(o); return o;
+}
+const OFF_KEYS = ['dmg', 'rate', 'range', 'crit', 'melee', 'ranged', 'elem'], DEF_KEYS = ['maxHp', 'regen', 'armor', 'dodge', 'lifesteal'], ECO_KEYS = ['coinMul', 'luck', 'magnet', 'harvest'];
+function itemTag(it){
+  if (it.tag) return it.tag;
+  const p = it.fx.find(([, d]) => d > 0), k = p ? p[0] : '';
+  return OFF_KEYS.includes(k) ? 'Ofensivo' : DEF_KEYS.includes(k) ? 'Defesa' : ECO_KEYS.includes(k) ? 'Economia' : 'Mobilidade';
+}
+const INV_MAX = 10, RECENT_N = 16;
 function pickItem(used){
   const owned = new Set(S.inv.map(e => e.id)), rec = S.recent || [];
   let pool = ITEMS.filter(i => !used.has(i.id) && !owned.has(i.id) && !rec.includes(i.id));
@@ -1531,33 +1663,30 @@ function pickItem(used){
   if (!pool.length) pool = ITEMS.filter(i => !used.has(i.id));
   return pick(pool);
 }
-function rollOffers(){
-  const used = new Set(), out = [];
+function rollOffers(prev){
+  const used = new Set(), out = [null, null, null, null];
   S.recent = S.recent || [];
-  while (out.length < 4) {
+  (prev || []).forEach((o, i) => { if (o && o.locked && !o.sold && i < 4) { o.price = offerPrice(o); out[i] = o; if (o.kind === 'item') used.add(o.it.id); } });
+  for (let i = 0; i < 4; i++) if (!out[i]) {
     const tier = rollTier();
-    if (Math.random() < .33) {
-      out.push(weaponOffer(tier));
-    } else {
-      const it = pickItem(used); used.add(it.id);
-      out.push({kind:'item', it, tier, fx:scaleFx(it.fx, tier), name:it.name, icon:it.icon, price:Math.max(1, Math.round(it.price * PM[tier] * priceMul()))});
-    }
+    if (Math.random() < .33) out[i] = weaponOffer(tier);
+    else { const it = pickItem(used); used.add(it.id); out[i] = itemOffer(it, tier); }
   }
-  if (!out.some(o => o.kind === 'weapon')) out[0] = weaponOffer(rollTier());
-  out.forEach(o => { if (o.kind === 'item') S.recent.push(o.it.id); });
+  if (!out.some(o => o.kind === 'weapon')) { const j = out.findIndex(o => !o.locked); if (j >= 0) out[j] = weaponOffer(rollTier()); }
+  out.forEach(o => { if (!o.locked && o.kind === 'item') S.recent.push(o.it.id); });
   S.recent = S.recent.slice(-RECENT_N);
   return out;
 }
-const rerollCost = () => Math.round(1 + S.wave * 1.2) + S.rerolls * 2;
+const rerollCost = () => Math.max(1, Math.round((Math.round(1 + S.wave * 1.2) + S.rerolls * 2) * haggleMul()));
 function wStats(def, tier){
-  const st = S.st, T = TW[tier], dmg = def.dmg * T.dmg * st.dmg, rate = st.rate * T.rate / def.cd, rng = Math.round(def.range * T.range * st.range);
+  const st = S.st, T = TW[tier], dmg = def.dmg * T.dmg * st.dmg * (1 + (isMeleeDef(def) ? st.melee : st.ranged)), rate = st.rate * T.rate / def.cd, rng = Math.round(def.range * T.range * st.range);
   return {dmg, rate, rng, n:def.n, pierce:def.pierce, dps:dmg * def.n * rate};
 }
 const f1 = v => (Math.round(v * 10) / 10).toString().replace('.', ',');
-function fxHTML(fx){
+function fxHTML(fx, was){
   return fx.map(([k, d]) => {
     const [label, fmt, fd] = STAT[k], cur = S.st[k], nxt = clampStat(k, cur + d), eff = nxt - cur;
-    return `<div class="ln"><span>${label}</span><b class="${eff >= 0 ? 'up' : 'down'}">${fd(eff)}</b></div><div class="was">${fmt(cur)} → ${fmt(nxt)}</div>`;
+    return `<div class="ln"><span>${label}</span><b class="${eff >= 0 ? 'up' : 'down'}">${fd(eff)}</b></div>` + (was ? `<div class="was">${fmt(cur)} → ${fmt(nxt)}</div>` : '');
   }).join('');
 }
 function weaponFx(d, tier){
@@ -1568,7 +1697,11 @@ function weaponFx(d, tier){
     (w.pierce ? `<div class="ln"><span>Atravessa</span><b>${w.pierce}</b></div>` : '') +
     `<div class="ln"><span>Dano/seg.</span><b class="hot">${f1(w.dps)}</b></div>`;
 }
-function sumFxHTML(list, n){
+function weaponMini(d, tier){
+  const w = wStats(d, tier), c = (l, v, cls) => `<div class="mc"><span>${l}</span><b${cls ? ` class="${cls}"` : ''}>${v}</b></div>`;
+  return `<div class="mini">${c('Dano', f1(w.dmg) + (w.n > 1 ? '×' + w.n : ''))}${c('Tiros/s', f1(w.rate))}${c('Alcance', w.rng)}${c('Dano/seg.', f1(w.dps), 'hot')}</div>`;
+}
+function sumFxHTML(list){
   const tot = {};
   list.forEach(e => e.fx.forEach(([k, d]) => { tot[k] = (tot[k] || 0) + d; }));
   return Object.entries(tot).map(([k, d]) => { const [label, , fd] = STAT[k], v = INTS.has(k) ? d : Math.round(d * 100) / 100; return `<div class="ln"><span>${label}</span><b class="${d >= 0 ? 'up' : 'down'}">${fd(v)}</b></div>`; }).join('');
@@ -1578,89 +1711,105 @@ function groupInv(list, keyFn){
   list.forEach(e => { const k = keyFn(e); if (!g.has(k)) g.set(k, []); g.get(k).push(e); });
   return [...g.values()];
 }
-function renderInv(){
-  const items = groupInv(S.inv, e => e.id + ':' + e.tier);
-  $('#invItems').innerHTML = items.length ? items.map(g => { const e = g[0];
-    return `<div class="irow" style="border-color:${e.tier ? RC[e.tier] : ''}"><img src="${ICON[e.icon]}" alt=""><div><div class="nm">${e.name}${g.length > 1 ? `<span class="x">×${g.length}</span>` : ''}<span class="rt" style="color:${RC[e.tier]}">${RN[e.tier]}</span></div><div class="fx">${sumFxHTML(g)}</div><div class="rowbtns"><button class="btn alt isell" data-i="${S.inv.indexOf(e)}">Vender +${Math.floor((e.price || 0) * .5)}</button></div></div></div>`; }).join('')
-    : '<div class="invempty">Ainda não compraste nenhum item.</div>';
-  const perks = groupInv(S.perks, e => e.id);
-  $('#invPerks').innerHTML = perks.length ? perks.map(g => { const e = g[0];
-    return `<div class="irow"><img src="${ICON[e.icon]}" alt=""><div><div class="nm">${e.name}${g.length > 1 ? `<span class="x">×${g.length}</span>` : ''}</div><div class="fx">${sumFxHTML(g)}</div></div></div>`; }).join('')
-    : '<div class="invempty">Ainda não subiste de nível nesta partida.</div>';
-  $('#invN').textContent = '(' + S.inv.length + '/' + INV_MAX + ')';
-}
 function recalcStats(){
-  const ch = S.ch, st = {maxHp:ch.hp, speed:ch.speed, dmg:1, rate:1, range:1, regen:0, magnet:24, dodge:0, coinMul:1, armor:0, lifesteal:0, luck:0};
-  ch.mods.forEach(([k, d]) => { st[k] = clampStat(k, st[k] + d); });
-  if (S.arena.fx.luck) st.luck += S.arena.fx.luck;
+  const st = baseStats(S.ch, S.arena);
   for (const e of [...S.perks, ...S.inv]) for (const [k, d] of e.fx) st[k] = clampStat(k, st[k] + d);
   Object.assign(S.st, st); S.p.hp = Math.min(S.p.hp, S.st.maxHp);
 }
 function sellItem(i){
   const e = S.inv[i]; if (!e) return;
-  S.coinsHeld += Math.floor((e.price || 0) * .5); S.inv.splice(i, 1); recalcStats(); sfx.coin(); renderShop();
-}
-function setTab(t){
-  S.tab = t;
-  $('#tabShop').classList.toggle('hidden', t !== 'shop'); $('#tabInv').classList.toggle('hidden', t !== 'inv');
-  document.querySelectorAll('.tab').forEach(b => b.classList.toggle('on', b.dataset.t === t));
+  S.coinsHeld += Math.floor((e.price || 0) * .5); S.inv.splice(i, 1); S.sel = null; recalcStats(); sfx.coin(); renderShop();
 }
 function openShop(){
-  S.mode = 'shop'; S.offers = rollOffers(); S.rerolls = 0; setTab('shop');
+  S.mode = 'shop'; S.offers = rollOffers(S.offers); S.rerolls = 0; S.sel = null;
   renderShop(); showOnly('shop');
 }
+const LOCK_SVG = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="7" width="10" height="7" fill="currentColor"/></svg>';
+function offerCard(o, i){
+  const s = S;
+  if (o.sold) return '<div class="card sold"></div>';
+  const isW = o.kind === 'weapon', wd = isW ? WEAPONS[o.key] : null;
+  const mt = isW && o.tier < 3 && s.weapons.some(w => w.type === o.key && w.tier === o.tier);
+  const invFull = !isW && s.inv.length >= INV_MAX;
+  const full = (isW && s.weapons.length >= 4 && !mt) || invFull;
+  const mw = mt && s.weapons.length >= 4 ? s.weapons.find(w => w.type === o.key && w.tier === o.tier) : null;
+  const total = o.price + (mw ? mergeCost(mw) : 0), can = s.coinsHeld >= total && !full;
+  const body = isW ? weaponMini(wd, o.tier) : fxHTML(o.fx) + (o.eff ? `<div class="eff">${EFFS[o.eff.id].txt(o.eff.v)}</div>` : '');
+  const img = isW ? ICONW[o.key][o.tier] : ICON[o.icon];
+  const tag = isW ? (isMeleeDef(wd) ? 'Corpo a corpo' : 'À distância') : itemTag(o.it);
+  const lack = !can && !full ? ` title="Faltam ${total - s.coinsHeld}"` : '';
+  return `<div class="card${o.locked ? ' lk' : ''}" style="border-color:${o.tier ? RC[o.tier] : ''}"><div class="top"><img class="ico" src="${img}" alt=""><div class="nm">${o.name}<span class="tag" style="color:${RC[o.tier]}">${tag} · ${RN[o.tier]}</span>${mt ? '<span class="tag" style="color:var(--lantern)">Funde com a tua</span>' : ''}</div></div>` +
+    `<div class="fx">${body}</div>` +
+    `<div class="foot"><button class="lock${o.locked ? ' on' : ''}" data-i="${i}" aria-label="Guardar oferta" aria-pressed="${!!o.locked}">${LOCK_SVG}</button>` +
+    `<button class="btn buy" data-i="${i}" ${can ? '' : 'disabled'}${lack}>${invFull ? 'Cheio' : full ? 'Sem espaço' : `<img src="${ICON.coin}" alt="">${total}${!can ? `<small>−${total - s.coinsHeld}</small>` : ''}`}</button></div></div>`;
+}
+function slot(img, border, sel, k, i, badge){
+  return `<button class="slot${sel ? ' sel' : ''}" data-k="${k}" data-i="${i}" style="border-color:${border}"><img src="${img}" alt="">${badge ? `<span class="bd">${badge}</span>` : ''}</button>`;
+}
+const STATICON = {maxHp:'heart', speed:'feather', dmg:'flame', rate:'bolt', range:'eye', regen:'sprout', magnet:'gem', dodge:'cloak', coinMul:'coins', armor:'shield', lifesteal:'drop', luck:'clover', crit:'x_crit', melee:'espada', ranged:'besta', elem:'x_flame', harvest:'x_wheat'};
+const stCls = k => { const c = S.st[k], o = S.base[k]; return c > o + 1e-9 ? 'up' : c < o - 1e-9 ? 'down' : ''; };
+function statVal(k){
+  const st = S.st, p = S.p;
+  if (k === 'maxHp') return Math.ceil(p.hp) + '/' + Math.round(st.maxHp);
+  if (k === 'armor') return Math.round(st.armor) + ' (−' + Math.round(st.armor / (st.armor + 12) * 100) + '%)';
+  return STAT[k][1](st[k]);
+}
+function statsHTML(){
+  const chips = ['maxHp', 'dmg', 'rate', 'armor', 'speed', 'crit'].map(k => `<div class="sc"><img src="${ICON[STATICON[k]]}" alt=""><span class="${stCls(k)}">${k === 'maxHp' ? Math.ceil(S.p.hp) + '/' + Math.round(S.st.maxHp) : k === 'armor' ? Math.round(S.st.armor) : STAT[k][1](S.st[k])}</span></div>`).join('');
+  return chips + `<div class="sc car">${S.statsOpen ? '▴' : '▾'}</div>`;
+}
+function statsFullHTML(){
+  const G = [['Ataque', ['dmg', 'melee', 'ranged', 'elem', 'rate', 'crit', 'range']], ['Defesa', ['maxHp', 'regen', 'armor', 'dodge', 'lifesteal', 'speed']], ['Economia', ['coinMul', 'harvest', 'luck', 'magnet']]];
+  return G.map(([t, ks]) => `<div><h4>${t}</h4><div class="g">${ks.map(k => `<div class="r"><img src="${ICON[STATICON[k]]}" alt=""><span>${k === 'maxHp' ? 'Vida' : STAT[k][0]}</span><span class="v ${stCls(k)}">${statVal(k)}</span></div>`).join('')}</div></div>`).join('');
+}
+function detailHTML(){
+  const sel = S.sel, s = S; if (!sel) return '';
+  let img, nm, rt = '', col = '', fx = '', btns = '';
+  if (sel.k === 'w') {
+    const w = s.weapons[sel.i]; if (!w) return '';
+    const d = WEAPONS[w.type], can = w.tier < 3 && s.weapons.some((o, k) => k !== sel.i && o.type === w.type && o.tier === w.tier);
+    img = ICONW[w.type][w.tier]; nm = d.name; rt = RN[w.tier]; col = RC[w.tier]; fx = weaponFx(d, w.tier);
+    btns = (can ? `<button class="btn merge" data-i="${sel.i}" ${s.coinsHeld >= mergeCost(w) ? '' : 'disabled'}>Fundir em ${RN[w.tier + 1]} · ${mergeCost(w)}</button>` : '') + `<button class="btn alt sell" data-i="${sel.i}">Vender +${sellPrice(w)}</button>`;
+  } else if (sel.k === 'i') {
+    const e = s.inv[sel.i]; if (!e) return '';
+    img = ICON[e.icon]; nm = e.name; rt = RN[e.tier]; col = RC[e.tier]; fx = sumFxHTML([e]) + (e.eff ? `<div class="eff wide">${EFFS[e.eff.id].txt(e.eff.v)}</div>` : '');
+    btns = `<button class="btn alt isell" data-i="${sel.i}">Vender +${Math.floor((e.price || 0) * .5)}</button>`;
+  } else {
+    const g = s.perks.filter(e => e.id === sel.i); if (!g.length) return '';
+    img = ICON[g[0].icon]; nm = g[0].name + (g.length > 1 ? ' ×' + g.length : ''); fx = sumFxHTML(g);
+  }
+  return `<div class="dt" style="border-color:${col}"><div class="hd"><img src="${img}" alt=""><div class="nm">${nm}${rt ? `<span class="rt" style="color:${col}">${rt}</span>` : ''}</div><button class="x dclose" aria-label="Fechar">✕</button></div><div class="fx">${fx}</div>${btns ? `<div class="dbtns">${btns}</div>` : ''}</div>`;
+}
 function renderShop(){
-  const s = S, st = s.st, p = s.p;
+  const s = S, st = s.st, p = s.p, sel = s.sel;
   $('#shopWave').textContent = 'Onda ' + s.wave + ' feita';
   $('#shopCoins').textContent = s.coinsHeld;
-  $('#offers').innerHTML = s.offers.map((o, i) => {
-    if (o.sold) return '<div class="card sold"></div>';
-    const isW = o.kind === 'weapon';
-    const mt = isW && o.tier < 3 && s.weapons.some(w => w.type === o.key && w.tier === o.tier);
-    const invFull = !isW && s.inv.length >= INV_MAX;
-    const full = (isW && s.weapons.length >= 4 && !mt) || invFull;
-    const mw = mt && s.weapons.length >= 4 ? s.weapons.find(w => w.type === o.key && w.tier === o.tier) : null;
-    const total = o.price + (mw ? mergeCost(mw) : 0);
-    const can = s.coinsHeld >= total && !full;
-    const fx = isW ? weaponFx(WEAPONS[o.key], o.tier) : fxHTML(o.fx);
-    const img = isW ? ICONW[o.key][o.tier] : ICON[o.icon];
-    return `<div class="card" style="border-color:${o.tier ? RC[o.tier] : ''}"><div class="top"><img class="ico" src="${img}" alt=""><div class="nm">${o.name}<span class="tag" style="color:${RC[o.tier]}">${isW ? 'Arma' : 'Item'} · ${RN[o.tier]}</span>${mt ? '<span class="tag" style="color:var(--lantern)">Funde com a tua</span>' : ''}</div></div>` +
-      `<div class="fx">${fx}</div>` +
-      `<button class="btn buy" data-i="${i}" ${can ? '' : 'disabled'}>${invFull ? 'Inventário cheio' : full ? 'Sem espaço' : `<img src="${ICON.coin}" alt="">${total}`}</button></div>`;
-  }).join('');
-  $('#wcount').textContent = `Armas equipadas (${s.weapons.length}/4)`;
-  let rows = '';
-  for (let i = 0; i < 4; i++) {
-    const w = s.weapons[i];
-    if (!w) { rows += '<div class="wrow empty">Espaço livre</div>'; continue; }
-    const d = WEAPONS[w.type], x = wStats(d, w.tier);
-    const can = w.tier < 3 && s.weapons.some((o, k) => k !== i && o.type === w.type && o.tier === w.tier);
-    rows += `<div class="wrow" style="border-color:${w.tier ? RC[w.tier] : ''}"><img src="${ICONW[w.type][w.tier]}" alt=""><div><div class="nm">${d.name} <span style="color:${RC[w.tier]};font-size:13px">${RN[w.tier]}</span></div>` +
-      `<div class="st">Dano <b>${f1(x.dmg)}${x.n > 1 ? '×' + x.n : ''}</b> · <b>${f1(x.rate)}</b>/s · Alcance <b>${x.rng}</b>${x.pierce ? ' · Atravessa <b>' + x.pierce + '</b>' : ''} · <b>${f1(x.dps)}</b> dano/s</div>` +
-      `<div class="rowbtns">${can ? `<button class="btn merge" data-i="${i}" ${s.coinsHeld >= mergeCost(w) ? '' : 'disabled'}>Fundir em ${RN[w.tier + 1]} · ${mergeCost(w)}</button>` : ''}<button class="btn alt sell" data-i="${i}">Vender +${sellPrice(w)}</button></div></div></div>`;
-  }
-  $('#wlist').innerHTML = rows;
-  $('#stats').innerHTML = statsHTML(); renderInv();
+  const hw = s.wallet > 0; $('#shopWalW').classList.toggle('hidden', !hw); $('#shopWal').textContent = Math.round(s.wallet);
+  $('#stats').innerHTML = statsHTML();
+  $('#statsFull').classList.toggle('hidden', !s.statsOpen); if (s.statsOpen) $('#statsFull').innerHTML = statsFullHTML();
+  $('#offers').innerHTML = s.offers.map(offerCard).join('');
+  $('#wcount').textContent = `Armas (${s.weapons.length}/4)`;
+  let w = '';
+  for (let i = 0; i < 4; i++) { const x = s.weapons[i]; w += x ? slot(ICONW[x.type][x.tier], x.tier ? RC[x.tier] : '', sel && sel.k === 'w' && sel.i === i, 'w', i) : '<div class="slot empty"></div>'; }
+  $('#wslots').innerHTML = w;
+  $('#icount').textContent = `Itens (${s.inv.length}/${INV_MAX})`;
+  let it = '';
+  for (let i = 0; i < INV_MAX; i++) { const e = s.inv[i]; it += e ? slot(ICON[e.icon], e.tier ? RC[e.tier] : '', sel && sel.k === 'i' && sel.i === i, 'i', i) : '<div class="slot empty"></div>'; }
+  $('#islots').innerHTML = it;
+  const perks = groupInv(s.perks, e => e.id);
+  $('#perkwrap').classList.toggle('hidden', !perks.length);
+  $('#pcount').textContent = `Melhorias de nível (${s.perks.length})`;
+  $('#pslots').innerHTML = perks.map(g => slot(ICON[g[0].icon], '', sel && sel.k === 'p' && sel.i === g[0].id, 'p', g[0].id, g.length > 1 ? '×' + g.length : '')).join('');
+  $('#detail').innerHTML = detailHTML();
   const rc = rerollCost(), rb = $('#reroll');
   rb.textContent = 'Trocar ' + rc; rb.disabled = s.coinsHeld < rc;
   $('#next').textContent = s.weapons.length ? 'Começar onda ' + (s.wave + 1) : 'Precisas de uma arma';
   $('#next').disabled = !s.weapons.length;
 }
-function statsHTML(){
-  const st = S.st, b = S.base, p = S.p, red = Math.round(st.armor / (st.armor + 12) * 100);
-  return [
-    ['Vida', Math.ceil(p.hp) + '/' + Math.round(st.maxHp), st.maxHp, b.maxHp], ['Velocidade', Math.round(st.speed), st.speed, b.speed],
-    ['Dano', pcs(st.dmg), st.dmg, b.dmg], ['Cadência', pcs(st.rate), st.rate, b.rate],
-    ['Alcance', pcs(st.range), st.range, b.range], ['Regeneração', st.regen.toFixed(1) + '/s', st.regen, b.regen],
-    ['Armadura', Math.round(st.armor) + ' (−' + red + '%)', st.armor, b.armor], ['Esquivar', Math.round(st.dodge * 100) + '%', st.dodge, b.dodge],
-    ['Roubo de vida', Math.round(st.lifesteal * 100) + '%', st.lifesteal, b.lifesteal], ['Sorte', Math.round(st.luck), st.luck, b.luck],
-    ['Moedas', pcs(st.coinMul), st.coinMul, b.coinMul], ['Íman', Math.round(st.magnet), st.magnet, b.magnet],
-  ].map(([a, v, c, o]) => `<div><span>${a}</span><span class="${c > o + 1e-9 ? 'up' : (c < o - 1e-9 ? 'down' : '')}">${v}</span></div>`).join('');
-}
 const sellPrice = w => Math.floor(WEAPONS[w.type].price * PW[w.tier] * .5);
 function sellWeapon(i){
   const w = S.weapons[i]; if (!w) return;
-  S.coinsHeld += sellPrice(w); S.weapons.splice(i, 1); sfx.coin(); renderShop();
+  S.coinsHeld += sellPrice(w); S.weapons.splice(i, 1); S.sel = null; sfx.coin(); renderShop();
 }
 function buy(i){
   const o = S.offers[i]; if (!o || o.sold || S.coinsHeld < o.price) return;
@@ -1671,8 +1820,8 @@ function buy(i){
     else if (m) { extra = mergeCost(m); if (S.coinsHeld < o.price + extra) return; m.tier++; m.cd = .3; sfx.level(); }   // sem espaço: funde com a que já tens (paga a fusão)
     else return;
   }
-  else { if (S.inv.length >= INV_MAX) return; applyFx(o.fx); S.inv.push({id:o.it.id, name:o.name, icon:o.icon, tier:o.tier, fx:o.fx, price:o.price}); }
-  S.coinsHeld -= o.price + extra; o.sold = true; S.bought++; sfx.buy(); renderShop();
+  else { if (S.inv.length >= INV_MAX) return; applyFx(o.fx); S.inv.push({id:o.it.id, name:o.name, icon:o.icon, tier:o.tier, fx:o.fx, price:o.price, eff:o.eff || null}); }
+  S.coinsHeld -= o.price + extra; o.sold = true; o.locked = false; S.bought++; sfx.buy(); renderShop();
 }
 
 const mergeCost = w => Math.round(WEAPONS[w.type].price * PW[w.tier + 1] * .5 * (1 + .06 * (S.wave - 1)));
@@ -1681,7 +1830,7 @@ function mergeWeapons(i){
   const j = S.weapons.findIndex((w, k) => k !== i && w.type === a.type && w.tier === a.tier); if (j < 0) return;
   const cost = mergeCost(a); if (S.coinsHeld < cost) return;
   const keep = Math.min(i, j), drop = Math.max(i, j);
-  S.coinsHeld -= cost; S.weapons[keep].tier++; S.weapons[keep].cd = .3; S.weapons.splice(drop, 1);
+  S.coinsHeld -= cost; S.weapons[keep].tier++; S.weapons[keep].cd = .3; S.weapons.splice(drop, 1); S.sel = null;
   sfx.level(); renderShop();
 }
 
@@ -1970,13 +2119,21 @@ $('#snd').addEventListener('click', e => { muted = !muted; e.currentTarget.class
 if (muted) $('#snd').classList.add('off');
 $('#endless').addEventListener('click', () => { S.endless = true; S.recorded = false; S.finished = false; hideAll(); openShop(); });
 $('#luCards').addEventListener('click', e => { const b = e.target.closest('.lu'); if (b) chooseSkill(+b.dataset.i); });
-$('#wlist').addEventListener('click', e => { const m = e.target.closest('.merge'); if (m) return mergeWeapons(+m.dataset.i); const v = e.target.closest('.sell'); if (v) sellWeapon(+v.dataset.i); });
-document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => { if (S.mode === 'shop') setTab(b.dataset.t); }));
-$('#invItems').addEventListener('click', e => { const b = e.target.closest('.isell'); if (b) sellItem(+b.dataset.i); });
-$('#offers').addEventListener('click', e => { const b = e.target.closest('.buy'); if (b) buy(+b.dataset.i); });
+$('#shop').addEventListener('click', e => {
+  const t = e.target, q = sel => t.closest(sel);
+  let b;
+  if ((b = q('.buy'))) return buy(+b.dataset.i);
+  if ((b = q('.lock'))) { const o = S.offers[+b.dataset.i]; if (o && !o.sold) { o.locked = !o.locked; snd('lk', 520, .05, 'square', .03); renderShop(); } return; }
+  if ((b = q('.merge'))) return mergeWeapons(+b.dataset.i);
+  if ((b = q('.isell'))) return sellItem(+b.dataset.i);
+  if ((b = q('.sell'))) return sellWeapon(+b.dataset.i);
+  if (q('.dclose')) { S.sel = null; return renderShop(); }
+  if ((b = q('.slot[data-k]'))) { const k = b.dataset.k, i = k === 'p' ? b.dataset.i : +b.dataset.i; S.sel = S.sel && S.sel.k === k && S.sel.i === i ? null : {k, i}; return renderShop(); }
+  if (q('#stats')) { S.statsOpen = !S.statsOpen; renderShop(); }
+});
 $('#reroll').addEventListener('click', () => {
   const c = rerollCost(); if (S.coinsHeld < c) return;
-  S.coinsHeld -= c; S.rerolls++; S.offers = rollOffers(); snd('rr', 400, .08, 'square', .03, 200); renderShop();
+  S.coinsHeld -= c; S.rerolls++; S.sel = null; S.offers = rollOffers(S.offers); snd('rr', 400, .08, 'square', .03, 200); renderShop();
 });
 $('#next').addEventListener('click', () => { S.wave++; hideAll(); startWave(); });
 
